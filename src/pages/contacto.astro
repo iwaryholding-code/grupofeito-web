@@ -161,3 +161,19 @@ import Footer from '../components/Footer.astro';
   
   <Footer />
 </Layout>
+
+<script>
+  document.querySelector('form[name="contacto"]').addEventListener('submit', async function(e) {
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    try {
+      await fetch('https://n8n.iwaryholding.com/webhook/grupofeitco-contacto', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+    } catch (error) {
+      console.error('Error enviando a n8n:', error);
+    }
+  });
+</script>
