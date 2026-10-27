@@ -1,16 +1,82 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Inicio" description="Grupo Feitco - Consultoría Fiscal Especializada">
+  <Header />
+  <Hero />
+  
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Nuestros Servicios</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="text-4xl mb-4">👤</div>
+          <h3 class="text-xl font-bold text-blue-900 mb-3">Personas Físicas</h3>
+          <p class="text-gray-600 mb-4">Optimización fiscal en RESICO, sueldos y salarios, actividades empresariales y arrendamiento.</p>
+          <a href="/servicios" class="text-blue-900 font-semibold hover:underline">Más información →</a>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🏢</div>
+          <h3 class="text-xl font-bold text-blue-900 mb-3">Personas Morales</h3>
+          <p class="text-gray-600 mb-4">Asesoría integral en régimen general, maquilas, precios de transferencia y cumplimiento fiscal.</p>
+          <a href="/servicios" class="text-blue-900 font-semibold hover:underline">Más información →</a>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🌎</div>
+          <h3 class="text-xl font-bold text-blue-900 mb-3">Fiscal Internacional</h3>
+          <p class="text-gray-600 mb-4">Estructuración de LLCs, tratados para evitar doble tributación y cumplimiento ante el IRS.</p>
+          <a href="/servicios" class="text-blue-900 font-semibold hover:underline">Más información →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">¿Por Qué Elegirnos?</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="flex items-start space-x-4">
+          <div class="text-3xl">✓</div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Experiencia Comprobada</h3>
+            <p class="text-gray-600">Más de 10 años optimizando la situación fiscal de empresas y personas.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start space-x-4">
+          <div class="text-3xl">✓</div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Enfoque Personalizado</h3>
+            <p class="text-gray-600">Cada cliente es único. Diseñamos estrategias a tu medida.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start space-x-4">
+          <div class="text-3xl">✓</div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Respaldo Legal</h3>
+            <p class="text-gray-600">Todas nuestras estrategias están 100% respaldadas por el marco legal.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start space-x-4">
+          <div class="text-3xl">✓</div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Tecnología de Punta</h3>
+            <p class="text-gray-600">Utilizamos las herramientas más avanzadas para tu asesoría.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
