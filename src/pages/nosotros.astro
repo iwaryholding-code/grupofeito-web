@@ -3,59 +3,54 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
-
-<Layout title="Nosotros" description="Conoce a Grupo Feitco - Consultoría Fiscal">
+<Layout title="Nosotros" description="Sobre Grupo Feitco">
   <Header />
   
-  <section class="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-32 mt-0">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-5xl font-bold mb-6">Sobre Nosotros</h1>
-      <p class="text-xl text-gray-200 max-w-3xl mx-auto">
-        Más de una década brindando soluciones fiscales estratégicas
-      </p>
+  <section class="pt-32 pb-20 bg-brand-navy text-white">
+    <div class="container mx-auto px-6 text-center max-w-3xl">
+      <span class="inline-block py-1 px-3 rounded-full bg-brand-gold/10 text-brand-gold text-xs font-semibold tracking-wider uppercase mb-6">Nuestra Firma</span>
+      <h1 class="text-5xl font-bold mb-6">Excelencia y Ética Fiscal</h1>
+      <p class="text-xl text-gray-300 font-light">Más de una década brindando tranquilidad y resultados a nuestros clientes.</p>
     </div>
   </section>
-  
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <h2 class="text-3xl font-bold text-blue-900 mb-6">Nuestra Misión</h2>
-      <p class="text-gray-600 text-lg mb-8">
-        Brindar asesoría fiscal de excelencia que permita a nuestros clientes optimizar 
-        su situación tributaria dentro del marco legal, con un enfoque personalizado y 
-        utilizando las herramientas tecnológicas más avanzadas.
-      </p>
-      
-      <h2 class="text-3xl font-bold text-blue-900 mb-6">Nuestra Visión</h2>
-      <p class="text-gray-600 text-lg mb-8">
-        Ser reconocidos como la firma de consultoría fiscal líder en México, 
-        especializada en fiscalidad internacional y estructuración de negocios, 
-        distinguidos por nuestra ética profesional, conocimiento técnico y resultados comprobados.
-      </p>
-      
-      <h2 class="text-3xl font-bold text-blue-900 mb-6">Nuestros Valores</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-bold text-blue-900 mb-3">Integridad</h3>
-          <p class="text-gray-600">Actuamos con total transparencia y ética profesional en cada asesoría.</p>
+
+  <section class="py-20 bg-brand-cream">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="grid md:grid-cols-2 gap-12 mb-16">
+        <div class="bg-white p-10 rounded-sm shadow-sm">
+          <h2 class="text-3xl font-serif font-bold text-brand-navy mb-4">Misión</h2>
+          <p class="text-gray-600 font-light leading-relaxed">Brindar asesoría fiscal de excelencia que permita a nuestros clientes optimizar su situación tributaria dentro del marco legal, con un enfoque personalizado y tecnológico.</p>
         </div>
-        
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-bold text-blue-900 mb-3">Excelencia</h3>
-          <p class="text-gray-600">Buscamos la máxima calidad en cada servicio que brindamos.</p>
+        <div class="bg-white p-10 rounded-sm shadow-sm">
+          <h2 class="text-3xl font-serif font-bold text-brand-navy mb-4">Visión</h2>
+          <p class="text-gray-600 font-light leading-relaxed">Ser la firma de consultoría fiscal líder en México, especializada en fiscalidad internacional, distinguidos por nuestra ética, conocimiento técnico y resultados comprobados.</p>
         </div>
-        
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-bold text-blue-900 mb-3">Compromiso</h3>
-          <p class="text-gray-600">Nos involucramos en el éxito fiscal de nuestros clientes.</p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 text-center">Nuestros Valores</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center p-6">
+          <div class="w-12 h-12 bg-brand-navy text-brand-gold rounded-full flex items-center justify-center mx-auto mb-4 font-serif font-bold text-xl">I</div>
+          <h3 class="font-bold text-brand-navy mb-2">Integridad</h3>
+          <p class="text-sm text-gray-600">Transparencia total.</p>
         </div>
-        
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-bold text-blue-900 mb-3">Innovación</h3>
-          <p class="text-gray-600">Utilizamos tecnología de punta para optimizar procesos y resultados.</p>
+        <div class="text-center p-6">
+          <div class="w-12 h-12 bg-brand-navy text-brand-gold rounded-full flex items-center justify-center mx-auto mb-4 font-serif font-bold text-xl">E</div>
+          <h3 class="font-bold text-brand-navy mb-2">Excelencia</h3>
+          <p class="text-sm text-gray-600">Máxima calidad técnica.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-12 h-12 bg-brand-navy text-brand-gold rounded-full flex items-center justify-center mx-auto mb-4 font-serif font-bold text-xl">C</div>
+          <h3 class="font-bold text-brand-navy mb-2">Compromiso</h3>
+          <p class="text-sm text-gray-600">Enfoque en resultados.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-12 h-12 bg-brand-navy text-brand-gold rounded-full flex items-center justify-center mx-auto mb-4 font-serif font-bold text-xl">N</div>
+          <h3 class="font-bold text-brand-navy mb-2">Innovación</h3>
+          <p class="text-sm text-gray-600">Tecnología de punta.</p>
         </div>
       </div>
     </div>
   </section>
-  
   <Footer />
 </Layout>

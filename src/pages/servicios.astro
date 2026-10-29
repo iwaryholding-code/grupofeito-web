@@ -3,94 +3,69 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
-
-<Layout title="Servicios" description="Servicios de consultoría fiscal de Grupo Feitco">
+<Layout title="Servicios" description="Servicios de consultoría fiscal premium">
   <Header />
   
-  <section class="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-32 mt-0">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-5xl font-bold mb-6">Nuestros Servicios</h1>
-      <p class="text-xl text-gray-200 max-w-3xl mx-auto">
-        Soluciones fiscales integrales adaptadas a tus necesidades
-      </p>
+  <section class="pt-32 pb-20 bg-brand-navy text-white">
+    <div class="container mx-auto px-6 text-center max-w-3xl">
+      <span class="inline-block py-1 px-3 rounded-full bg-brand-gold/10 text-brand-gold text-xs font-semibold tracking-wider uppercase mb-6">Áreas de Práctica</span>
+      <h1 class="text-5xl font-bold mb-6">Soluciones Fiscales Integrales</h1>
+      <p class="text-xl text-gray-300 font-light">Estrategias adaptadas a la complejidad de su negocio.</p>
     </div>
   </section>
-  
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold text-blue-900 mb-8 border-b-2 border-blue-900 pb-2">Personas Físicas</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3">Régimen Simplificado de Confianza (RESICO)</h3>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>Alta y asesoría en el régimen</li>
-              <li>Declaraciones mensuales y anuales</li>
-              <li>Optimización de deducciones</li>
-              <li>Cumplimiento ante el SAT</li>
-            </ul>
-          </div>
-          
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3">Sueldos y Salarios</h3>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>Declaración anual de personas físicas</li>
-              <li>Devoluciones de impuestos</li>
-              <li>Optimización de ingresos</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+
+  <section class="py-20 bg-brand-cream">
+    <div class="container mx-auto px-6 max-w-6xl">
       
       <div class="mb-16">
-        <h2 class="text-3xl font-bold text-blue-900 mb-8 border-b-2 border-blue-900 pb-2">Personas Morales</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3">Régimen General de Ley</h3>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>Declaraciones mensuales y anuales</li>
-              <li>Contabilidad electrónica</li>
-              <li>DICTAMEN fiscal</li>
-              <li>Opinión de cumplimiento</li>
-            </ul>
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 flex items-center">
+          <span class="w-12 h-1 bg-brand-gold mr-4"></span> Personas Físicas
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-sm border-l-4 border-brand-gold shadow-sm">
+            <h3 class="text-xl font-bold text-brand-navy mb-3">Régimen Simplificado (RESICO)</h3>
+            <p class="text-gray-600 font-light">Alta, asesoría mensual, optimización de deducciones y cumplimiento estricto ante el SAT.</p>
           </div>
-          
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3">Maquilas y Manufactura</h3>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>Asesoría en régimen de maquila</li>
-              <li>Precios de transferencia</li>
-              <li>Programa IMMEX</li>
-            </ul>
+          <div class="bg-white p-8 rounded-sm border-l-4 border-brand-navy shadow-sm">
+            <h3 class="text-xl font-bold text-brand-navy mb-3">Sueldos y Salarios</h3>
+            <p class="text-gray-600 font-light">Declaración anual, devoluciones y estrategias para optimizar ingresos por compensaciones.</p>
           </div>
         </div>
       </div>
-      
+
       <div class="mb-16">
-        <h2 class="text-3xl font-bold text-blue-900 mb-8 border-b-2 border-blue-900 pb-2">Fiscal Internacional</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3">LLCs en Estados Unidos</h3>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>Constitución de LLCs</li>
-              <li>Obtención de EIN</li>
-              <li>Declaraciones ante el IRS (Forms 5472, 1120)</li>
-              <li>FBAR y FATCA</li>
-            </ul>
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 flex items-center">
+          <span class="w-12 h-1 bg-brand-gold mr-4"></span> Personas Morales
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-sm border-l-4 border-brand-gold shadow-sm">
+            <h3 class="text-xl font-bold text-brand-navy mb-3">Régimen General de Ley</h3>
+            <p class="text-gray-600 font-light">Contabilidad electrónica, DICTAMEN fiscal, opiniones de cumplimiento y planeación tributaria.</p>
           </div>
-          
-          <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3">Tratados Internacionales</h3>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>Evitación de doble tributación</li>
-              <li>Certificados de residencia fiscal</li>
-              <li>Precios de transferencia internacionales</li>
-            </ul>
+          <div class="bg-white p-8 rounded-sm border-l-4 border-brand-navy shadow-sm">
+            <h3 class="text-xl font-bold text-brand-navy mb-3">Maquila y Manufactura</h3>
+            <p class="text-gray-600 font-light">Asesoría especializada en programa IMMEX, precios de transferencia y cumplimiento global.</p>
           </div>
         </div>
       </div>
+
+      <div>
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 flex items-center">
+          <span class="w-12 h-1 bg-brand-gold mr-4"></span> Fiscal Internacional
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-sm border-l-4 border-brand-gold shadow-sm">
+            <h3 class="text-xl font-bold text-brand-navy mb-3">LLCs en Estados Unidos</h3>
+            <p class="text-gray-600 font-light">Constitución, obtención de EIN, Forms 5472/1120, FBAR y cumplimiento FATCA.</p>
+          </div>
+          <div class="bg-white p-8 rounded-sm border-l-4 border-brand-navy shadow-sm">
+            <h3 class="text-xl font-bold text-brand-navy mb-3">Tratados Internacionales</h3>
+            <p class="text-gray-600 font-light">Evitación de doble tributación, certificados de residencia fiscal y planeación transfronteriza.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
-  
   <Footer />
 </Layout>

@@ -4,75 +4,46 @@ import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Footer from '../components/Footer.astro';
 ---
-
-<Layout title="Inicio" description="Grupo Feitco - Consultoría Fiscal Especializada">
+<Layout title="Inicio" description="Grupo Feitco - Consultoría Fiscal Premium">
   <Header />
   <Hero />
   
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Nuestros Servicios</h2>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-brand-navy mb-4">Nuestras Áreas de Práctica</h2>
+        <div class="w-16 h-1 bg-brand-gold mx-auto"></div>
+      </div>
       
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
-          <div class="text-4xl mb-4">👤</div>
-          <h3 class="text-xl font-bold text-blue-900 mb-3">Personas Físicas</h3>
-          <p class="text-gray-600 mb-4">Optimización fiscal en RESICO, sueldos y salarios, actividades empresariales y arrendamiento.</p>
-          <a href="/servicios" class="text-blue-900 font-semibold hover:underline">Más información →</a>
-        </div>
-        
-        <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
-          <div class="text-4xl mb-4">🏢</div>
-          <h3 class="text-xl font-bold text-blue-900 mb-3">Personas Morales</h3>
-          <p class="text-gray-600 mb-4">Asesoría integral en régimen general, maquilas, precios de transferencia y cumplimiento fiscal.</p>
-          <a href="/servicios" class="text-blue-900 font-semibold hover:underline">Más información →</a>
-        </div>
-        
-        <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
-          <div class="text-4xl mb-4">🌎</div>
-          <h3 class="text-xl font-bold text-blue-900 mb-3">Fiscal Internacional</h3>
-          <p class="text-gray-600 mb-4">Estructuración de LLCs, tratados para evitar doble tributación y cumplimiento ante el IRS.</p>
-          <a href="/servicios" class="text-blue-900 font-semibold hover:underline">Más información →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">¿Por Qué Elegirnos?</h2>
-      
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="flex items-start space-x-4">
-          <div class="text-3xl">✓</div>
-          <div>
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Experiencia Comprobada</h3>
-            <p class="text-gray-600">Más de 10 años optimizando la situación fiscal de empresas y personas.</p>
+        <!-- Card 1 -->
+        <div class="bg-brand-cream p-8 rounded-sm border border-gray-100 hover:shadow-xl transition duration-300 group">
+          <div class="w-12 h-12 bg-brand-navy rounded-sm flex items-center justify-center mb-6 group-hover:bg-brand-gold transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </div>
+          <h3 class="text-xl font-serif font-bold text-brand-navy mb-3">Personas Físicas</h3>
+          <p class="text-gray-600 mb-4 font-light">Optimización en RESICO, sueldos y salarios, actividades empresariales y arrendamiento.</p>
+          <a href="/servicios" class="text-brand-gold font-medium text-sm hover:text-brand-navy transition">Más información →</a>
         </div>
         
-        <div class="flex items-start space-x-4">
-          <div class="text-3xl">✓</div>
-          <div>
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Enfoque Personalizado</h3>
-            <p class="text-gray-600">Cada cliente es único. Diseñamos estrategias a tu medida.</p>
+        <!-- Card 2 -->
+        <div class="bg-brand-cream p-8 rounded-sm border border-gray-100 hover:shadow-xl transition duration-300 group">
+          <div class="w-12 h-12 bg-brand-navy rounded-sm flex items-center justify-center mb-6 group-hover:bg-brand-gold transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
           </div>
+          <h3 class="text-xl font-serif font-bold text-brand-navy mb-3">Personas Morales</h3>
+          <p class="text-gray-600 mb-4 font-light">Régimen general, maquilas, precios de transferencia y cumplimiento fiscal corporativo.</p>
+          <a href="/servicios" class="text-brand-gold font-medium text-sm hover:text-brand-navy transition">Más información →</a>
         </div>
         
-        <div class="flex items-start space-x-4">
-          <div class="text-3xl">✓</div>
-          <div>
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Respaldo Legal</h3>
-            <p class="text-gray-600">Todas nuestras estrategias están 100% respaldadas por el marco legal.</p>
+        <!-- Card 3 -->
+        <div class="bg-brand-cream p-8 rounded-sm border border-gray-100 hover:shadow-xl transition duration-300 group">
+          <div class="w-12 h-12 bg-brand-navy rounded-sm flex items-center justify-center mb-6 group-hover:bg-brand-gold transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
           </div>
-        </div>
-        
-        <div class="flex items-start space-x-4">
-          <div class="text-3xl">✓</div>
-          <div>
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Tecnología de Punta</h3>
-            <p class="text-gray-600">Utilizamos las herramientas más avanzadas para tu asesoría.</p>
-          </div>
+          <h3 class="text-xl font-serif font-bold text-brand-navy mb-3">Fiscal Internacional</h3>
+          <p class="text-gray-600 mb-4 font-light">Estructuración de LLCs, tratados para evitar doble tributación y cumplimiento ante el IRS.</p>
+          <a href="/servicios" class="text-brand-gold font-medium text-sm hover:text-brand-navy transition">Más información →</a>
         </div>
       </div>
     </div>

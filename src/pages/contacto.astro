@@ -3,177 +3,102 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
-
-<Layout title="Contacto" description="Contacta a Grupo Feitco para una consulta fiscal">
+<Layout title="Contacto" description="Agenda tu consulta fiscal">
   <Header />
   
-  <section class="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-32 mt-0">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-5xl font-bold mb-6">Contacto</h1>
-      <p class="text-xl text-gray-200 max-w-3xl mx-auto">
-        Agenda tu diagnóstico fiscal gratuito hoy mismo
-      </p>
+  <section class="pt-32 pb-20 bg-brand-navy text-white">
+    <div class="container mx-auto px-6 text-center max-w-3xl">
+      <span class="inline-block py-1 px-3 rounded-full bg-brand-gold/10 text-brand-gold text-xs font-semibold tracking-wider uppercase mb-6">Hablemos</span>
+      <h1 class="text-5xl font-bold mb-6">Agende su Diagnóstico</h1>
+      <p class="text-xl text-gray-300 font-light">Respuesta garantizada en menos de 24 horas hábiles.</p>
     </div>
   </section>
-  
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <div class="grid md:grid-cols-2 gap-12">
+
+  <section class="py-20 bg-brand-cream">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="grid md:grid-cols-2 gap-16">
+        
         <div>
-          <h2 class="text-3xl font-bold text-blue-900 mb-6">Información de Contacto</h2>
-          
-          <div class="space-y-6">
+          <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8">Información de Contacto</h2>
+          <div class="space-y-8">
             <div class="flex items-start space-x-4">
-              <div class="text-2xl">📧</div>
+              <div class="w-10 h-10 bg-brand-gold/20 text-brand-gold rounded-sm flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
               <div>
-                <h3 class="font-bold text-blue-900">Email</h3>
+                <h3 class="font-bold text-brand-navy">Correo Electrónico</h3>
                 <p class="text-gray-600">contacto@grupofeitco.com</p>
               </div>
             </div>
             
             <div class="flex items-start space-x-4">
-              <div class="text-2xl">📞</div>
+              <div class="w-10 h-10 bg-brand-gold/20 text-brand-gold rounded-sm flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
               <div>
-                <h3 class="font-bold text-blue-900">Teléfono</h3>
+                <h3 class="font-bold text-brand-navy">Teléfono</h3>
                 <p class="text-gray-600">+52 (XXX) XXX-XXXX</p>
               </div>
             </div>
             
             <div class="flex items-start space-x-4">
-              <div class="text-2xl">📍</div>
+              <div class="w-10 h-10 bg-brand-gold/20 text-brand-gold rounded-sm flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
               <div>
-                <h3 class="font-bold text-blue-900">Ubicación</h3>
+                <h3 class="font-bold text-brand-navy">Ubicación</h3>
                 <p class="text-gray-600">Los Altos de Jalisco, México</p>
               </div>
             </div>
           </div>
           
-          <div class="mt-8 bg-blue-50 p-6 rounded-lg">
-            <h3 class="font-bold text-blue-900 mb-3">Horario de Atención</h3>
-            <p class="text-gray-600">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-            <p class="text-gray-600">Sábados: Con cita previa</p>
+          <div class="mt-12 bg-brand-navy p-8 rounded-sm text-white">
+            <h3 class="font-serif font-bold text-brand-gold mb-3">Horario de Atención</h3>
+            <p class="text-gray-300 font-light">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+            <p class="text-gray-300 font-light">Sábados: Con cita previa</p>
           </div>
         </div>
         
         <div>
-          <h2 class="text-3xl font-bold text-blue-900 mb-6">Envíanos un Mensaje</h2>
+          <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8">Envíenos un Mensaje</h2>
           
-          <form 
-            name="contacto" 
-            method="POST" 
-            netlify 
-            netlify-honeypot="bot-field"
-            class="space-y-6"
-            data-netlify="true"
-          >
+          <form name="contacto" method="POST" netlify netlify-honeypot="bot-field" class="space-y-6" data-netlify="true">
             <input type="hidden" name="form-name" value="contacto" />
             <input type="hidden" name="bot-field" />
             
             <div>
-              <label class="block text-gray-700 font-semibold mb-2" for="nombre">
-                Nombre completo *
-              </label>
-              <input 
-                type="text" 
-                id="nombre" 
-                name="nombre" 
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                placeholder="Tu nombre completo"
-              />
+              <label class="block text-brand-navy font-medium mb-2 text-sm">Nombre completo *</label>
+              <input type="text" name="nombre" required class="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm focus:outline-none focus:border-brand-gold transition" placeholder="Su nombre" />
             </div>
             
             <div>
-              <label class="block text-gray-700 font-semibold mb-2" for="email">
-                Correo electrónico *
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                placeholder="tu@email.com"
-              />
+              <label class="block text-brand-navy font-medium mb-2 text-sm">Correo electrónico *</label>
+              <input type="email" name="email" required class="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm focus:outline-none focus:border-brand-gold transition" placeholder="correo@empresa.com" />
             </div>
             
             <div>
-              <label class="block text-gray-700 font-semibold mb-2" for="telefono">
-                Teléfono
-              </label>
-              <input 
-                type="tel" 
-                id="telefono" 
-                name="telefono" 
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                placeholder="(XXX) XXX-XXXX"
-              />
-            </div><div>
-              <label class="block text-gray-700 font-semibold mb-2" for="servicio">
-                Servicio de interés *
-              </label>
-              <select 
-                id="servicio" 
-                name="servicio" 
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-              >
-                <option value="">Selecciona un servicio</option>
-                <option value="resico">Régimen Simplificado de Confianza (RESICO)</option>
-                <option value="personas-fisicas">Personas Físicas - Declaración Anual</option>
+              <label class="block text-brand-navy font-medium mb-2 text-sm">Servicio de interés *</label>
+              <select name="servicio" required class="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm focus:outline-none focus:border-brand-gold transition">
+                <option value="">Seleccione una opción</option>
+                <option value="resico">RESICO</option>
                 <option value="personas-morales">Personas Morales</option>
-                <option value="maquila">Maquila y Manufactura</option>
-                <option value="llc-eeuu">LLC en Estados Unidos</option>
-                <option value="fiscal-internacional">Fiscal Internacional</option>
+                <option value="fiscal-internacional">Fiscal Internacional (LLC)</option>
                 <option value="otro">Otro</option>
               </select>
             </div>
             
             <div>
-              <label class="block text-gray-700 font-semibold mb-2" for="mensaje">
-                Mensaje *
-              </label>
-              <textarea 
-                id="mensaje" 
-                name="mensaje" 
-                rows="4" 
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-                placeholder="Cuéntanos sobre tu situación fiscal..."
-              ></textarea>
+              <label class="block text-brand-navy font-medium mb-2 text-sm">Mensaje *</label>
+              <textarea name="mensaje" rows="4" required class="w-full px-4 py-3 bg-white border border-gray-200 rounded-sm focus:outline-none focus:border-brand-gold transition" placeholder="Describa brevemente su situación..."></textarea>
             </div>
             
-            <button 
-              type="submit" 
-              class="w-full bg-blue-900 text-white py-4 rounded-lg font-semibold hover:bg-blue-800 transition"
-            >
-              Enviar Mensaje
+            <button type="submit" class="w-full bg-brand-navy text-white py-4 rounded-sm font-medium hover:bg-brand-gold transition duration-300 tracking-wide">
+              ENVIAR MENSAJE
             </button>
-            
-            <p class="text-sm text-gray-500 text-center">
-              * Campos obligatorios
-            </p>
           </form>
         </div>
       </div>
     </div>
   </section>
-  
   <Footer />
 </Layout>
-
-<script>
-  document.querySelector('form[name="contacto"]').addEventListener('submit', async function(e) {
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
-    try {
-      await fetch('https://n8n.iwaryholding.com/webhook/grupofeitco-contacto', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-    } catch (error) {
-      console.error('Error enviando a n8n:', error);
-    }
-  });
-</script>
