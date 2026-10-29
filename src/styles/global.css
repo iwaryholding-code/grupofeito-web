@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0A2540;
+  --color-brand-gold: #C9A961;
+  --color-brand-cream: #F8F9FA;
+  --color-brand-slate: #1E293B;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}
